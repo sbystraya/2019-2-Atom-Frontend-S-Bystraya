@@ -5,6 +5,7 @@ import ActionTypes from '../constants/ActionTypes'
 import { incrementIfOdd } from '../actions/counter'
 import { connect } from 'react-redux'
 
+
 export class CounterContainer extends React.Component {
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
