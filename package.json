@@ -2,7 +2,7 @@
   "name": "atom-mail-2019-sbystraya",
   "description": "Mail.Ru Group Frontend Atom course, 2019",
   "version": "0.1.0",
-  "author": "No.Name",
+  "author": "sbystraya",
   "homepage": "https://sbystraya.github.io/2019-2-Atom-Frontend-S-Bystraya",
   "dependencies": {
     "@emotion/core": "^10.0.14",
@@ -83,6 +83,7 @@
     "lint-fix": "eslint --fix",
     "clean": "rm -rf dist",
     "test": "CI=true npm run test:engine && npm run test:unit && npm run lint",
+	"test:coverage": "npm test -- --coverage",
     "test:engine": "check-engine",
     "test:sec": "npm audit || true",
     "test:unit": "cross-env NODE_ENV=test jest",
